@@ -18,7 +18,7 @@ Start Jetty server so that it boots the server after any source change:
 
 Open [http://localhost:8650/](http://localhost:8650/)
 
-== Heroku instructions
+## Heroku instructions
 
 If you already have all the necessary tools from [Heroku](http://heroku.com/) then you only need to
 
@@ -31,4 +31,3 @@ If you already have all the necessary tools from [Heroku](http://heroku.com/) th
 [More on Heroku Scala article](https://devcenter.heroku.com/articles/scala)
 
 Hope you enjoy, don't forget to [follow me on twitter](http://twitter.com/mileskin)!
-
