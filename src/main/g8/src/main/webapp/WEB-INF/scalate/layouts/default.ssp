@@ -1,0 +1,16 @@
+<%@ var body: String %>
+<%@ var title: String = "Default title" %>
+
+<html>
+  <head>
+    <title>${title}</title>
+    <script src="/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="/js/foo.js" type="text/javascript"></script>
+  </head>
+  <body>
+  <div class="main">
+    ${unescape(body)}
+  </div>
+  </body>
+</html>
+
