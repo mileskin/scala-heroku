@@ -1,9 +1,8 @@
 <%@ var body: String %>
-<%@ var title: String = "Default title" %>
 
 <html>
   <head>
-    <title>${title}</title>
+    <title>My App</title>
     <script src="/js/jquery-1.8.2.min.js" type="text/javascript"></script>
     <script src="/js/foo.js" type="text/javascript"></script>
   </head>
