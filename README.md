@@ -1,20 +1,34 @@
 ## Summary
 
-Template Scala Web project ready to be deployed to Heroku.
+Example Scala Web project ready to be deployed to Heroku.
 
-## Installation
+## Setup
 
-* Download sources using [giter8](https://github.com/n8han/giter8):
+Launch [SBT](https://github.com/harrah/xsbt/):
 
-     g8 mileskin/scala-heroku
+    ./sbt
 
-* Go to my-app (or what ever you typed as the project name):
+(optionally) generate IDEA configuration:
 
-    cd my-app
+    gen-idea
 
-* Read more instructions from the documentation:
+Start Jetty server so that it boots the server after any source change:
 
-    vim README.md` or [online version](https://github.com/mileskin/scala-heroku.g8/blob/master/src/main/g8/README.md)
+    ~;container:start; container:reload /
 
-* Have fun and don't forget to [follow me on twitter](http://twitter.com/mileskin)!
+Open [http://localhost:8650/](http://localhost:8650/)
+
+== Heroku instructions
+
+If you already have all the necessary tools from [Heroku](http://heroku.com/) then you only need to
+
+    ./sbt clean compile stage
+    heroku login
+    heroku create
+    git push heroku master
+    heroku open
+
+[More on Heroku Scala article](https://devcenter.heroku.com/articles/scala)
+
+Hope you enjoy, don't forget to [follow me on twitter](http://twitter.com/mileskin)!
 
